@@ -1,0 +1,54 @@
+/*.titulo-principal{
+    padding-left: 30px;
+}*/
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;  
+    padding: 20px; /*espaciamiento interno*/
+}
+
+.titulo-centralizado{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*selectores de Etiquetas en general*/
+.acerca-de{
+    text-align: center;
+    background: #CCCCCC;
+}
+
+em strong{ 
+    color: red;
+}
+/*Id: #*/
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+
+/*selectores de Clase: .*/
+.items{
+    font-style: italic;
+}
+
+#lista-diferenciales{
+    display: inline-block; /*que solo ocupe el espacio de su contenido y que los demas espacios*/
+                        /*arriba abajo derecho izquierdo se puedan ajustar*/
+    vertical-align: top;
+    width: 20%; /*ocupa el 20% de anchura de la pantalla*/
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}

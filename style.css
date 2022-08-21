@@ -1,0 +1,356 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*(superior/inferior laterales)*/
+}
+
+.caja{
+    width: 940px; /*ocupa el 70% aprox del espacio*/
+    position: relative; /*relativa a la posicion absoluta del nav*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline; /*no quiero que ocupes el 100% de la pagina*/
+    margin: 0 0 0 15px; /*margenes: arriba derecha abajo izquierda*/
+    
+}
+
+nav a{
+    text-transform: uppercase; /*mayusculas*/
+    color: #000000;
+    font-weight: bold; /*negritas*/
+    font-size: 22px;
+    text-decoration: none; /*sin subrayado*/
+}
+/*cuando el puntero se posiciona sobre alguna opcion del nav*/
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+
+}
+
+.productos{
+    width: 940px; /*Anchura de la seccion*/
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block; /*alinear los elementos de forma horizontal por bloques (alinea a la izquierda por defecto)*/
+    text-align: center;
+    width: 30%; /*(30* 3 items que son)*/
+    vertical-align: top;
+    margin: 0 1.5%; /*(1.5*6 espacios laterales[los lados de cada item que son cuadrados])*/
+    /*se ocupa el 99% de la anchura de la seccion*/
+    padding: 30px 20px;
+    box-sizing: border-box; 
+    border: 2px solid #000000;
+    border-radius: 10px;
+    /*metodo largo! 
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;*/
+}
+
+
+.productos li:hover{
+    border-color: #C78C19;
+    
+}
+
+/*cuando este cliqueado*/
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;    
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    /*Da tiempo a que el boton cambie de color 
+    (transicion 1 segundo), aplica la propiedad para todas 
+    las propiedades (all)*/
+    transition: 1s all;
+    /*cambia a manita cuando el mouse pase por el boton*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    /*aumenta 1.2 (20%) cuando el mouse se posicione 
+    en el boton*/
+    transform: scale(1.2);
+    /*transform: rotate(70deg);*/
+    /*rota 70 grados (degrees)*/
+    
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px; /*espaciamiento interno*/
+}
+
+/*AQUI INICIA EL CSS PARA NUESTRA PAGINA home*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; 
+    /*2em: 2 veces el tamano padron de la letra que usa el navegador*/
+    margin: 0 0 1em;
+    clear:left;
+    /*Variacion del RGB (RGBA), cuarto parametro:opacidad*/
+    /*color: rgba(218,0,0,0.3);*/
+}
+
+/*Pseudoelementos*/
+/*.titulo-principal:first-letter{
+font-weight: bold;
+}
+
+.titulo-principal:before{
+    content: "[";
+    }
+
+.titulo-principal:after{
+    content: "]";
+    }
+
+p:first-line{
+    font-style: italic;
+}*/
+
+
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left; /*bordear el rexto alrededor de la imagen, conserva su sombra*/
+    margin: 0 20px 20px 0; /*superior, derecha, inferior, izquierda*/
+
+}
+
+.mapa{
+    padding: 3em 0;
+    /*Gradientes: se puede trabajar tambien en distintos angulos, no solo en horizontal*/
+    background: linear-gradient(#FEFEFE,#888888);
+    /*Gradiente en circulos/elipses*/
+    /*background: radial-gradient(orange 50%,blue,red,black);*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5; /*altura de linea (1+50% de tamano padron)*/
+}
+/*pseudoelemento: añadir estrellita a los elementos de la 
+lista el inicio (antes del texto de los items)*/
+.items:before{
+    content: "★";
+}
+
+.items:first-child{
+    /*pseudoclase primer hijo, nth-child(numero de item)*/
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    /*transicion de la opacidad*/
+    transition: 400ms;
+    /*sombra: 3 parametros: derecha,izquierda, difuminacion
+    expansion de la sombra, color 
+    en numeros negativos seria en sentido contrario
+    tambien se le puede anadir sombra a los textos (text-shadow)
+    si se anade inset puede ser sombra interna*/
+    box-shadow: 10px 10px 30px 25px #000000;
+}
+
+.imagen-diferenciales:hover{
+    /*opacidad en la imagen*/
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+/*media query: trabajar con excepciones 
+en este caso para resolucion maxima de 480px*/
+ @media screen and (max-width:480px){
+    main{
+        width: auto;
+        margin: 0 auto;  
+    }
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+    .productos, .enviar{
+        width: auto;
+    }
+
+    .productos li{
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+
+    }
+
+    .input-padron{
+        margin: auto;
+        text-align: center;
+    }
+    form label{
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+    }
+
+    form fieldset{
+        text-align: center;
+    }
+}
+
